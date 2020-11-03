@@ -21,7 +21,4 @@ pipeline {
     }
 
   }
-  tools {
-    maven 'Maven 3.8'
-  }
 }
