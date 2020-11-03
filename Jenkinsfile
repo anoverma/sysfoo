@@ -19,6 +19,8 @@ pipeline {
         archiveArtifacts 'target/*.war'
       }
     }
-
+  }
+  tools {
+    maven 'apache-maven-3.8'
   }
 }
