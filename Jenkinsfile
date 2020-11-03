@@ -1,6 +1,15 @@
 pipeline {
   agent any
   stages {
+    stage ('Initialize') {
+    stage ('Initialize') {
+            steps {
+                sh '''
+                    echo "PATH = ${PATH}"
+                    echo "M2_HOME = ${M2_HOME}"
+                ''' 
+            }
+        }
     stage('build') {
       steps {
         sh 'mvn compile'
@@ -21,6 +30,6 @@ pipeline {
     }
   }
   tools {
-    maven 'apache-maven-3.8'
+    maven 'Maven 3.6.3'
   }
 }
