@@ -2,7 +2,6 @@ pipeline {
   agent any
   stages {
     stage ('Initialize') {
-    stage ('Initialize') {
             steps {
                 sh '''
                     echo "PATH = ${PATH}"
